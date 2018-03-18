@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url("../fonts/MyriadPro/MyriadProRegular.eot");
+    src: url("../fonts/MyriadPro/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Futuris C';
+    src: url('../fonts/FuturaFuturis/FuturaFuturisC.eot');
+    src: local('FuturaFuturisC'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.woff') format('woff'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Futuris C';
+    src: url('../fonts/FuturaFuturis/FuturaFuturisC-Bold.eot');
+    src: local('FuturaFuturisC Bold'), local('FuturaFuturisC-Bold'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC-Bold.woff') format('woff'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Medium C';
+    src: url('../fonts/Futura/FuturaMediumC.eot');
+    src: local('Futura Medium Cyrillic'), local('FuturaMediumC'),
+    url('../fonts/Futura/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/FuturaMediumC.woff') format('woff'),
+    url('../fonts/Futura/FuturaMediumC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Book C';
+    src: url('../fonts/Futura/FuturaBookC.eot');
+    src: local('Futura Book Cyrillic'), local('FuturaBookC'),
+    url('../fonts/Futura/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/FuturaBookC.woff') format('woff'),
+    url('../fonts/Futura/FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Demi C';
+    src: url('../fonts/Futura/FuturaDemiC.eot');
+    src: local('Futura Demi Cyrillic'), local('FuturaDemiC'),
+    url('../fonts/Futura/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Futura/FuturaDemiC.woff') format('woff'),
+    url('../fonts/Futura/FuturaDemiC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moloko';
+    src: url("../fonts/Moloko/Moloko.eot");
+    src: url("../fonts/Moloko/Moloko.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Moloko/Moloko.woff") format("woff"),
+    url("../fonts/Moloko/Moloko.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

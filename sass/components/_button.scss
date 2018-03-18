@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    background-color: $btn-color;
+    color: $light;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 15px;
+    font-family: 'Futura Medium C', sans-serif;
+
+    &--mini {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.875;
+    }
+
+    &--link {
+        background: transparent;
+        border-color: #eee;
+
+        &.is-active {
+            background: rgb(245, 168, 32);
+            border-color: rgb(245, 168, 32);
+        }
+
+        &:hover {
+            border-color: rgb(245, 168, 32);
+        }
+    }
+}
+
+.link {
+
+    &--login {
+        float: right;
+
+        &::before {
+            content: '';
+            margin-right: 14px;
+            @extend .icon,
+            .icon--login;
+        }
+    }
+}

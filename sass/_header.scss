@@ -1,0 +1,47 @@
+.header {
+	background-image: url('../images/header-bg.jpg');
+	color: $light;
+	padding: 0 ($width - 1000px)/2;
+}
+
+.header__wrap {
+	font-family: 'Futura Book C', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	padding: 24px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+	@extend .clearfix;
+}
+
+.nav {
+	float: left;
+}
+
+.nav__link {
+	margin-right: 54px;
+	&:last-child {margin-right: 0;}
+}
+
+.logo__wrap {
+}
+
+.logo {
+	color: $light;
+	font-family: "Futura Futuris C", sans-serif;
+	font-size: 103px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -2.8px;
+	margin: 0;
+}
+
+.logo-caption {
+	color: #1cc257;
+	font-size: 42px;
+	font-family: 'EB Garamond', serif;
+	font-style: italic;
+	margin: 0;
+}
