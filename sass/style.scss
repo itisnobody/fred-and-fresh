@@ -1,19 +1,24 @@
-// @import "reset";
-@import "normalize";
-@import "variables";
-@import "fonts";
-@import "icon";
-@import "components/layout";
-@import "components/button";
+@import "components/normalize";
 
-@import "common";
+@import "components/fonts";
+@import "components/variables";
+@import "components/breakpoint";
+@import "components/mixins";
+@import "components/common";
+@import "components/layout";
+@import "components/buttons";
+@import "components/forms";
+
 @import "header";
 @import "footer";
+@import "icon";
 
 @import "blocks/menu";
-// @import "blocks/_advantages.scss";
-// @import "blocks/_offers.scss";
-// @import "blocks/_clients.scss";
-// @import "blocks/_map.scss";
-// @import "blocks/_mails-form.scss";
-// @import "blocks/_share.scss";
+@import "blocks/menu-list";
+@import "blocks/advantages";
+@import "blocks/offers";
+@import "blocks/offers-delivery";
+@import "blocks/clients";
+@import "blocks/map";
+@import "blocks/form";
+@import "blocks/share";

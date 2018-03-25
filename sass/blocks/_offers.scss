@@ -1,0 +1,31 @@
+.offers {
+	background-color: $orange;
+	color: $white;
+	padding: 70px 0 90px;
+	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+
+	@include wave-top ($orange);
+
+}
+
+.offers__wrap {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.offers__item {
+	max-width: 220px;
+	text-align:center;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.offers__item__caption {
+	font-family: $futura-demi;
+	font-size: 25px;
+	font-weight: 400;
+	display: inline-block;
+}

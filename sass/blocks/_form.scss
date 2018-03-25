@@ -1,0 +1,16 @@
+.mails-form {
+	background-color: $orange;
+	color: $white;
+	padding: 70px 0;
+	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+
+	@include wave-top ($orange);
+
+	input {
+		float: left;
+	}
+
+	textarea {
+		float: right;
+	}
+}

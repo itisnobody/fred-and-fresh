@@ -1,0 +1,29 @@
+form {
+	color: $gray;
+	font-family: "Futura Demi C";
+	font-size: 19px;
+	font-weight: 400;
+}
+
+input, textarea, select {
+	box-sizing: border-box;
+	background-color: $white;
+	min-width: 465px;
+	line-height: 1.7;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+input, select {
+	height: 42px;
+	border: none;
+}
+
+select {
+	color: #757575;	
+}
+
+textarea {
+	padding: 1px 10px;
+}

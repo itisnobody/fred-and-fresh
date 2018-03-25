@@ -9,117 +9,275 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-btn-label-name: 'icon--btn__label';
+$icon-btn-label-x: 0px;
+$icon-btn-label-y: 0px;
+$icon-btn-label-offset-x: 0px;
+$icon-btn-label-offset-y: 0px;
+$icon-btn-label-width: 310px;
+$icon-btn-label-height: 102px;
+$icon-btn-label-total-width: 623px;
+$icon-btn-label-total-height: 456px;
+$icon-btn-label-image: '../images/sprite.png';
+$icon-btn-label: (0px, 0px, 0px, 0px, 310px, 102px, 623px, 456px, '../images/sprite.png', 'icon--btn__label', );
+$icon-cafe-name: 'icon--cafe';
+$icon-cafe-x: 531px;
+$icon-cafe-y: 272px;
+$icon-cafe-offset-x: -531px;
+$icon-cafe-offset-y: -272px;
+$icon-cafe-width: 89px;
+$icon-cafe-height: 61px;
+$icon-cafe-total-width: 623px;
+$icon-cafe-total-height: 456px;
+$icon-cafe-image: '../images/sprite.png';
+$icon-cafe: (531px, 272px, -531px, -272px, 89px, 61px, 623px, 456px, '../images/sprite.png', 'icon--cafe', );
+$icon-catering-name: 'icon--catering';
+$icon-catering-x: 531px;
+$icon-catering-y: 180px;
+$icon-catering-offset-x: -531px;
+$icon-catering-offset-y: -180px;
+$icon-catering-width: 69px;
+$icon-catering-height: 92px;
+$icon-catering-total-width: 623px;
+$icon-catering-total-height: 456px;
+$icon-catering-image: '../images/sprite.png';
+$icon-catering: (531px, 180px, -531px, -180px, 69px, 92px, 623px, 456px, '../images/sprite.png', 'icon--catering', );
+$icon-chasopis-name: 'icon--chasopis';
+$icon-chasopis-x: 0px;
+$icon-chasopis-y: 102px;
+$icon-chasopis-offset-x: 0px;
+$icon-chasopis-offset-y: -102px;
+$icon-chasopis-width: 115px;
+$icon-chasopis-height: 164px;
+$icon-chasopis-total-width: 623px;
+$icon-chasopis-total-height: 456px;
+$icon-chasopis-image: '../images/sprite.png';
+$icon-chasopis: (0px, 102px, 0px, -102px, 115px, 164px, 623px, 456px, '../images/sprite.png', 'icon--chasopis', );
+$icon-ciferblat-name: 'icon--ciferblat';
+$icon-ciferblat-x: 310px;
+$icon-ciferblat-y: 0px;
+$icon-ciferblat-offset-x: -310px;
+$icon-ciferblat-offset-y: 0px;
+$icon-ciferblat-width: 104px;
+$icon-ciferblat-height: 151px;
+$icon-ciferblat-total-width: 623px;
+$icon-ciferblat-total-height: 456px;
+$icon-ciferblat-image: '../images/sprite.png';
+$icon-ciferblat: (310px, 0px, -310px, 0px, 104px, 151px, 623px, 456px, '../images/sprite.png', 'icon--ciferblat', );
+$icon-corpdelivery-name: 'icon--corpdelivery';
+$icon-corpdelivery-x: 172px;
+$icon-corpdelivery-y: 382px;
+$icon-corpdelivery-offset-x: -172px;
+$icon-corpdelivery-offset-y: -382px;
+$icon-corpdelivery-width: 106px;
+$icon-corpdelivery-height: 73px;
+$icon-corpdelivery-total-width: 623px;
+$icon-corpdelivery-total-height: 456px;
+$icon-corpdelivery-image: '../images/sprite.png';
+$icon-corpdelivery: (172px, 382px, -172px, -382px, 106px, 73px, 623px, 456px, '../images/sprite.png', 'icon--corpdelivery', );
+$icon-datahub-name: 'icon--datahub';
+$icon-datahub-x: 115px;
+$icon-datahub-y: 102px;
+$icon-datahub-offset-x: -115px;
+$icon-datahub-offset-y: -102px;
+$icon-datahub-width: 137px;
+$icon-datahub-height: 137px;
+$icon-datahub-total-width: 623px;
+$icon-datahub-total-height: 456px;
+$icon-datahub-image: '../images/sprite.png';
+$icon-datahub: (115px, 102px, -115px, -102px, 137px, 137px, 623px, 456px, '../images/sprite.png', 'icon--datahub', );
+$icon-delivery-name: 'icon--delivery';
+$icon-delivery-x: 135px;
+$icon-delivery-y: 266px;
+$icon-delivery-offset-x: -135px;
+$icon-delivery-offset-y: -266px;
+$icon-delivery-width: 138px;
+$icon-delivery-height: 113px;
+$icon-delivery-total-width: 623px;
+$icon-delivery-total-height: 456px;
+$icon-delivery-image: '../images/sprite.png';
+$icon-delivery: (135px, 266px, -135px, -266px, 138px, 113px, 623px, 456px, '../images/sprite.png', 'icon--delivery', );
+$icon-dessert-name: 'icon--dessert';
+$icon-dessert-x: 531px;
+$icon-dessert-y: 89px;
+$icon-dessert-offset-x: -531px;
+$icon-dessert-offset-y: -89px;
+$icon-dessert-width: 77px;
+$icon-dessert-height: 91px;
+$icon-dessert-total-width: 623px;
+$icon-dessert-total-height: 456px;
+$icon-dessert-image: '../images/sprite.png';
+$icon-dessert: (531px, 89px, -531px, -89px, 77px, 91px, 623px, 456px, '../images/sprite.png', 'icon--dessert', );
+$icon-ebsh-name: 'icon--ebsh';
+$icon-ebsh-x: 414px;
+$icon-ebsh-y: 254px;
+$icon-ebsh-offset-x: -414px;
+$icon-ebsh-offset-y: -254px;
+$icon-ebsh-width: 116px;
+$icon-ebsh-height: 115px;
+$icon-ebsh-total-width: 623px;
+$icon-ebsh-total-height: 456px;
+$icon-ebsh-image: '../images/sprite.png';
+$icon-ebsh: (414px, 254px, -414px, -254px, 116px, 115px, 623px, 456px, '../images/sprite.png', 'icon--ebsh', );
 $icon-facebook-name: 'icon--facebook';
-$icon-facebook-x: 0px;
-$icon-facebook-y: 0px;
-$icon-facebook-offset-x: 0px;
-$icon-facebook-offset-y: 0px;
+$icon-facebook-x: 252px;
+$icon-facebook-y: 102px;
+$icon-facebook-offset-x: -252px;
+$icon-facebook-offset-y: -102px;
 $icon-facebook-width: 42px;
 $icon-facebook-height: 42px;
-$icon-facebook-total-width: 84px;
-$icon-facebook-total-height: 84px;
+$icon-facebook-total-width: 623px;
+$icon-facebook-total-height: 456px;
 $icon-facebook-image: '../images/sprite.png';
-$icon-facebook: (0px, 0px, 0px, 0px, 42px, 42px, 84px, 84px, '../images/sprite.png', 'icon--facebook', );
+$icon-facebook: (252px, 102px, -252px, -102px, 42px, 42px, 623px, 456px, '../images/sprite.png', 'icon--facebook', );
+$icon-formula-name: 'icon--formula';
+$icon-formula-x: 0px;
+$icon-formula-y: 266px;
+$icon-formula-offset-x: 0px;
+$icon-formula-offset-y: -266px;
+$icon-formula-width: 135px;
+$icon-formula-height: 116px;
+$icon-formula-total-width: 623px;
+$icon-formula-total-height: 456px;
+$icon-formula-image: '../images/sprite.png';
+$icon-formula: (0px, 266px, 0px, -266px, 135px, 116px, 623px, 456px, '../images/sprite.png', 'icon--formula', );
+$icon-freespace-name: 'icon--freespace';
+$icon-freespace-x: 273px;
+$icon-freespace-y: 266px;
+$icon-freespace-offset-x: -273px;
+$icon-freespace-offset-y: -266px;
+$icon-freespace-width: 114px;
+$icon-freespace-height: 111px;
+$icon-freespace-total-width: 623px;
+$icon-freespace-total-height: 456px;
+$icon-freespace-image: '../images/sprite.png';
+$icon-freespace: (273px, 266px, -273px, -266px, 114px, 111px, 623px, 456px, '../images/sprite.png', 'icon--freespace', );
+$icon-health-name: 'icon--health';
+$icon-health-x: 414px;
+$icon-health-y: 0px;
+$icon-health-offset-x: -414px;
+$icon-health-offset-y: 0px;
+$icon-health-width: 117px;
+$icon-health-height: 125px;
+$icon-health-total-width: 623px;
+$icon-health-total-height: 456px;
+$icon-health-image: '../images/sprite.png';
+$icon-health: (414px, 0px, -414px, 0px, 117px, 125px, 623px, 456px, '../images/sprite.png', 'icon--health', );
 $icon-instagram-name: 'icon--instagram';
-$icon-instagram-x: 42px;
-$icon-instagram-y: 0px;
-$icon-instagram-offset-x: -42px;
-$icon-instagram-offset-y: 0px;
+$icon-instagram-x: 252px;
+$icon-instagram-y: 144px;
+$icon-instagram-offset-x: -252px;
+$icon-instagram-offset-y: -144px;
 $icon-instagram-width: 42px;
 $icon-instagram-height: 42px;
-$icon-instagram-total-width: 84px;
-$icon-instagram-total-height: 84px;
+$icon-instagram-total-width: 623px;
+$icon-instagram-total-height: 456px;
 $icon-instagram-image: '../images/sprite.png';
-$icon-instagram: (42px, 0px, -42px, 0px, 42px, 42px, 84px, 84px, '../images/sprite.png', 'icon--instagram', );
+$icon-instagram: (252px, 144px, -252px, -144px, 42px, 42px, 623px, 456px, '../images/sprite.png', 'icon--instagram', );
 $icon-login-name: 'icon--login';
-$icon-login-x: 42px;
-$icon-login-y: 42px;
-$icon-login-offset-x: -42px;
-$icon-login-offset-y: -42px;
+$icon-login-x: 600px;
+$icon-login-y: 180px;
+$icon-login-offset-x: -600px;
+$icon-login-offset-y: -180px;
 $icon-login-width: 19px;
 $icon-login-height: 21px;
-$icon-login-total-width: 84px;
-$icon-login-total-height: 84px;
+$icon-login-total-width: 623px;
+$icon-login-total-height: 456px;
 $icon-login-image: '../images/sprite.png';
-$icon-login: (42px, 42px, -42px, -42px, 19px, 21px, 84px, 84px, '../images/sprite.png', 'icon--login', );
+$icon-login: (600px, 180px, -600px, -180px, 19px, 21px, 623px, 456px, '../images/sprite.png', 'icon--login', );
+$icon-machine-name: 'icon--machine';
+$icon-machine-x: 531px;
+$icon-machine-y: 333px;
+$icon-machine-offset-x: -531px;
+$icon-machine-offset-y: -333px;
+$icon-machine-width: 61px;
+$icon-machine-height: 83px;
+$icon-machine-total-width: 623px;
+$icon-machine-total-height: 456px;
+$icon-machine-image: '../images/sprite.png';
+$icon-machine: (531px, 333px, -531px, -333px, 61px, 83px, 623px, 456px, '../images/sprite.png', 'icon--machine', );
+$icon-projector-name: 'icon--projector';
+$icon-projector-x: 0px;
+$icon-projector-y: 382px;
+$icon-projector-offset-x: 0px;
+$icon-projector-offset-y: -382px;
+$icon-projector-width: 172px;
+$icon-projector-height: 74px;
+$icon-projector-total-width: 623px;
+$icon-projector-total-height: 456px;
+$icon-projector-image: '../images/sprite.png';
+$icon-projector: (0px, 382px, 0px, -382px, 172px, 74px, 623px, 456px, '../images/sprite.png', 'icon--projector', );
+$icon-quality-name: 'icon--quality';
+$icon-quality-x: 414px;
+$icon-quality-y: 125px;
+$icon-quality-offset-x: -414px;
+$icon-quality-offset-y: -125px;
+$icon-quality-width: 108px;
+$icon-quality-height: 129px;
+$icon-quality-total-width: 623px;
+$icon-quality-total-height: 456px;
+$icon-quality-image: '../images/sprite.png';
+$icon-quality: (414px, 125px, -414px, -125px, 108px, 129px, 623px, 456px, '../images/sprite.png', 'icon--quality', );
+$icon-salad-name: 'icon--salad';
+$icon-salad-x: 278px;
+$icon-salad-y: 382px;
+$icon-salad-offset-x: -278px;
+$icon-salad-offset-y: -382px;
+$icon-salad-width: 96px;
+$icon-salad-height: 58px;
+$icon-salad-total-width: 623px;
+$icon-salad-total-height: 456px;
+$icon-salad-image: '../images/sprite.png';
+$icon-salad: (278px, 382px, -278px, -382px, 96px, 58px, 623px, 456px, '../images/sprite.png', 'icon--salad', );
+$icon-sandwich-name: 'icon--sandwich';
+$icon-sandwich-x: 531px;
+$icon-sandwich-y: 0px;
+$icon-sandwich-offset-x: -531px;
+$icon-sandwich-offset-y: 0px;
+$icon-sandwich-width: 92px;
+$icon-sandwich-height: 89px;
+$icon-sandwich-total-width: 623px;
+$icon-sandwich-total-height: 456px;
+$icon-sandwich-image: '../images/sprite.png';
+$icon-sandwich: (531px, 0px, -531px, 0px, 92px, 89px, 623px, 456px, '../images/sprite.png', 'icon--sandwich', );
+$icon-soup-name: 'icon--soup';
+$icon-soup-x: 310px;
+$icon-soup-y: 151px;
+$icon-soup-offset-x: -310px;
+$icon-soup-offset-y: -151px;
+$icon-soup-width: 93px;
+$icon-soup-height: 101px;
+$icon-soup-total-width: 623px;
+$icon-soup-total-height: 456px;
+$icon-soup-image: '../images/sprite.png';
+$icon-soup: (310px, 151px, -310px, -151px, 93px, 101px, 623px, 456px, '../images/sprite.png', 'icon--soup', );
 $icon-twitter-name: 'icon--twitter';
-$icon-twitter-x: 0px;
-$icon-twitter-y: 42px;
-$icon-twitter-offset-x: 0px;
-$icon-twitter-offset-y: -42px;
+$icon-twitter-x: 252px;
+$icon-twitter-y: 186px;
+$icon-twitter-offset-x: -252px;
+$icon-twitter-offset-y: -186px;
 $icon-twitter-width: 42px;
 $icon-twitter-height: 42px;
-$icon-twitter-total-width: 84px;
-$icon-twitter-total-height: 84px;
+$icon-twitter-total-width: 623px;
+$icon-twitter-total-height: 456px;
 $icon-twitter-image: '../images/sprite.png';
-$icon-twitter: (0px, 42px, 0px, -42px, 42px, 42px, 84px, 84px, '../images/sprite.png', 'icon--twitter', );
-$icon-facebook-2x-name: 'icon--facebook@2x';
-$icon-facebook-2x-x: 0px;
-$icon-facebook-2x-y: 0px;
-$icon-facebook-2x-offset-x: 0px;
-$icon-facebook-2x-offset-y: 0px;
-$icon-facebook-2x-width: 84px;
-$icon-facebook-2x-height: 84px;
-$icon-facebook-2x-total-width: 168px;
-$icon-facebook-2x-total-height: 168px;
-$icon-facebook-2x-image: 'sprite@2x.png';
-$icon-facebook-2x: (0px, 0px, 0px, 0px, 84px, 84px, 168px, 168px, 'sprite@2x.png', 'icon--facebook@2x', );
-$icon-instagram-2x-name: 'icon--instagram@2x';
-$icon-instagram-2x-x: 84px;
-$icon-instagram-2x-y: 0px;
-$icon-instagram-2x-offset-x: -84px;
-$icon-instagram-2x-offset-y: 0px;
-$icon-instagram-2x-width: 84px;
-$icon-instagram-2x-height: 84px;
-$icon-instagram-2x-total-width: 168px;
-$icon-instagram-2x-total-height: 168px;
-$icon-instagram-2x-image: 'sprite@2x.png';
-$icon-instagram-2x: (84px, 0px, -84px, 0px, 84px, 84px, 168px, 168px, 'sprite@2x.png', 'icon--instagram@2x', );
-$icon-login-2x-name: 'icon--login@2x';
-$icon-login-2x-x: 84px;
-$icon-login-2x-y: 84px;
-$icon-login-2x-offset-x: -84px;
-$icon-login-2x-offset-y: -84px;
-$icon-login-2x-width: 38px;
-$icon-login-2x-height: 42px;
-$icon-login-2x-total-width: 168px;
-$icon-login-2x-total-height: 168px;
-$icon-login-2x-image: 'sprite@2x.png';
-$icon-login-2x: (84px, 84px, -84px, -84px, 38px, 42px, 168px, 168px, 'sprite@2x.png', 'icon--login@2x', );
-$icon-twitter-2x-name: 'icon--twitter@2x';
-$icon-twitter-2x-x: 0px;
-$icon-twitter-2x-y: 84px;
-$icon-twitter-2x-offset-x: 0px;
-$icon-twitter-2x-offset-y: -84px;
-$icon-twitter-2x-width: 84px;
-$icon-twitter-2x-height: 84px;
-$icon-twitter-2x-total-width: 168px;
-$icon-twitter-2x-total-height: 168px;
-$icon-twitter-2x-image: 'sprite@2x.png';
-$icon-twitter-2x: (0px, 84px, 0px, -84px, 84px, 84px, 168px, 168px, 'sprite@2x.png', 'icon--twitter@2x', );
-$spritesheet-width: 84px;
-$spritesheet-height: 84px;
+$icon-twitter: (252px, 186px, -252px, -186px, 42px, 42px, 623px, 456px, '../images/sprite.png', 'icon--twitter', );
+$icon-wave-name: 'icon--wave';
+$icon-wave-x: 278px;
+$icon-wave-y: 440px;
+$icon-wave-offset-x: -278px;
+$icon-wave-offset-y: -440px;
+$icon-wave-width: 217px;
+$icon-wave-height: 6px;
+$icon-wave-total-width: 623px;
+$icon-wave-total-height: 456px;
+$icon-wave-image: '../images/sprite.png';
+$icon-wave: (278px, 440px, -278px, -440px, 217px, 6px, 623px, 456px, '../images/sprite.png', 'icon--wave', );
+$spritesheet-width: 623px;
+$spritesheet-height: 456px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-facebook, $icon-instagram, $icon-login, $icon-twitter, );
-$spritesheet: (84px, 84px, '../images/sprite.png', $spritesheet-sprites, );
-$retina-spritesheet-width: 168px;
-$retina-spritesheet-height: 168px;
-$retina-spritesheet-image: 'sprite@2x.png';
-$retina-spritesheet-sprites: ($icon-facebook-2x, $icon-instagram-2x, $icon-login-2x, $icon-twitter-2x, );
-$retina-spritesheet: (168px, 168px, 'sprite@2x.png', $retina-spritesheet-sprites, );
-
-// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
-//
-// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
-$icon-facebook-group-name: 'icon--facebook';
-$icon-facebook-group: ('icon--facebook', $icon-facebook, $icon-facebook-2x, );
-$icon-instagram-group-name: 'icon--instagram';
-$icon-instagram-group: ('icon--instagram', $icon-instagram, $icon-instagram-2x, );
-$icon-login-group-name: 'icon--login';
-$icon-login-group: ('icon--login', $icon-login, $icon-login-2x, );
-$icon-twitter-group-name: 'icon--twitter';
-$icon-twitter-group: ('icon--twitter', $icon-twitter, $icon-twitter-2x, );
-$retina-groups: ($icon-facebook-group, $icon-instagram-group, $icon-login-group, $icon-twitter-group, );
+$spritesheet-sprites: ($icon-btn-label, $icon-cafe, $icon-catering, $icon-chasopis, $icon-ciferblat, $icon-corpdelivery, $icon-datahub, $icon-delivery, $icon-dessert, $icon-ebsh, $icon-facebook, $icon-formula, $icon-freespace, $icon-health, $icon-instagram, $icon-login, $icon-machine, $icon-projector, $icon-quality, $icon-salad, $icon-sandwich, $icon-soup, $icon-twitter, $icon-wave, );
+$spritesheet: (623px, 456px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -171,34 +329,6 @@ $retina-groups: ($icon-facebook-group, $icon-instagram-group, $icon-login-group,
   @include sprite-height($sprite);
 }
 
-// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
-//   It should be used with a "retina group" variable.
-//
-// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
-//
-// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
-//
-// .icon-home {
-//   @include retina-sprite($icon-home-group);
-// }
-@mixin sprite-background-size($sprite) {
-  $sprite-total-width: nth($sprite, 7);
-  $sprite-total-height: nth($sprite, 8);
-  background-size: $sprite-total-width $sprite-total-height;
-}
-
-@mixin retina-sprite($retina-group) {
-  $normal-sprite: nth($retina-group, 2);
-  $retina-sprite: nth($retina-group, 3);
-  @include sprite($normal-sprite);
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi) {
-    @include sprite-image($retina-sprite);
-    @include sprite-background-size($normal-sprite);
-  }
-}
-
 // The `sprites` mixin generates identical output to the CSS template
 //   but can be overridden inside of SCSS
 //
@@ -208,19 +338,6 @@ $retina-groups: ($icon-facebook-group, $icon-instagram-group, $icon-login-group,
     $sprite-name: nth($sprite, 10);
     .#{$sprite-name} {
       @include sprite($sprite);
-    }
-  }
-}
-
-// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
-//   This yields the same output as CSS retina template but can be overridden in SCSS
-//
-// @include retina-sprites($retina-groups);
-@mixin retina-sprites($retina-groups) {
-  @each $retina-group in $retina-groups {
-    $sprite-name: nth($retina-group, 1);
-    .#{$sprite-name} {
-      @include retina-sprite($retina-group);
     }
   }
 }

@@ -1,4 +1,5 @@
 .clearfix {
+
 	&::after {
 		content: '';
 		display: block;
@@ -6,10 +7,67 @@
 	}
 }
 
-// .container {
-// 	max-width: 1170px;
-// 	margin: 0 auto;
-// 	@media screen and (max-width: 768px) {
-// 		width: 50%;
-// 	}
-// }
+.container {
+	
+	@include center-block (1000px);
+
+	@extend .clearfix;
+	// @media screen and (max-width: 768px) {
+	// 	width: 50%;
+	// }
+}
+
+.col-lt {
+	float: left;
+	width: 50%;
+}
+
+.col-rt {
+	float: right;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wave {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -7px;
+		right: 0;
+		background-repeat: repeat;
+		height: 20px;
+		background-size: 40px 20px;
+		background-image: radial-gradient(circle at 11px -6px, transparent 12px, $white 13px);   
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		background-repeat: repeat;
+		height: 10px;
+		background-size: 40px 10px;
+		background-image: radial-gradient(circle at 25px 13px, $white 12px, transparent 0px);
+		right: 0;  
+		left: 6px;
+		top: -12px;
+	}
+}
