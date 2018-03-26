@@ -1,16 +1,23 @@
 .mails-form {
 	background-color: $orange;
 	color: $white;
-	padding: 70px 0;
+	padding: 54px 0 72px;
 	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
 
 	@include wave-top ($orange);
 
-	input {
-		float: left;
+	.container {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-content:  space-between;
+		height: 258px;
+		padding-bottom: 70px;
+	}
+
+	input, textarea {
 	}
 
 	textarea {
-		float: right;
 	}
 }

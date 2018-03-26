@@ -31,7 +31,8 @@ body {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  // margin: 0.67em 0;
+  margin-bottom: 0.5em;
 }
 
 /* Grouping content
@@ -45,7 +46,7 @@ h1 {
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  // overflow: visible; /* 2 */
 }
 
 /**

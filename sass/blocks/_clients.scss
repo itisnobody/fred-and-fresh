@@ -1,8 +1,8 @@
 .clients {
-	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
-	padding: 70px 0;
+    box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+    padding: 70px 0;
 
-	@include wave-top ($white);
+    @include wave-top ($white);
 }
 
 .clients__wrap {

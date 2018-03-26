@@ -13,6 +13,7 @@
     font-weight: 400;
     line-height: 2.3;
     min-width: 160px;
+    cursor: pointer;
 
     &.is-hover,
     &:hover {
@@ -42,9 +43,9 @@
         font-size: 33px;
         font-weight: 400;
         line-height: 2;
-        padding: 5px 40px;
-        // margin: 37px auto 0;
+        padding: 5px 40px; // margin: 37px auto 0;
         margin: 0 auto;
+        position: relative;
     }
 
     &--circle {
@@ -59,7 +60,7 @@
         &:hover,
         &:active {
             width: 200px;
-            height:200px;
+            height: 200px;
             margin: 10px;
             box-shadow: 0 24px 51px rgba(139, 57, 3, 0.36);
         }
@@ -68,16 +69,52 @@
             background-color: $white/1.03;
         }
     }
+
+    &--prev,
+    &--next {
+        min-width:40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: $white;
+        background-color: #d3d9db;
+        linear-gradient: none;
+        background-image: none;
+        vertical-align: baseline;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 8px 50px rgba(139, 57, 3, 0.36);
+        }
+    }
 }
 
 .link {
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 4px;
+        bottom: -0.5em;
+        left: 0;
+        background-color: #fad00b;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 
     &--login {
-        float: right;
-
         &::before {
             content: '';
-            margin-right: 14px;
+            margin-right: 0.5em;
             @extend .icon,
             .icon--login;
         }

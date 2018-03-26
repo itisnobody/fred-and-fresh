@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 	color: $white;
-	height: 600px;
+	height: 1rem*31;
 	position: relative;
 	text-align: center;
 }
@@ -19,12 +19,14 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 75px;
+	height: 63px;
 	display: flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	align-items: center;
 
 	@include center-block (1040px);
+
+	padding: 0 1rem*11;
 
 	&::before {
 		content: '';
@@ -35,51 +37,50 @@
 		left:0;
 		right:0;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.4);
 		box-shadow: 0 -1px 35px rgba(2, 4, 5, 0.75);
-		filter: blur(10px);
+		filter: blur(0px);
 	}
 }
 
 .nav {
-	// float: left;
 	display: flex;
-	justify-content:space-around;
-	min-width: 600px;
+	justify-content:space-between;
+	min-width: 36*1rem;
 }
 
 .nav__link {
+	padding: 0 1em;
 	// margin-right: 54px;
 	// margin-right: 48px;
-	
-	&:last-child {
-		margin-right: 0;
-	}
+	// &:last-child {
+	// 	margin-right: 0;
+	// }
 }
 
 .logo__wrap {
 	position: absolute;
-	top: 50%;
+	top: 54%;
 	left: 0;
-	right: 0;
-	padding-left: 50%;
+	text-align:center;
+	margin-left: 56%;
     transform: translateY(-50%);
 }
 
 .logo {
 	color: $white;
 	font-family: $futura-futuris;
-	font-size: 103px;
+	font-size: 96px;
 	font-weight: 700;
 	text-align: left;
 	text-transform: uppercase;
-	letter-spacing: -2.8px;
+	margin-bottom:8px;
 	display: inline-block;
 }
 
 .logo-caption {
 	color: #1cc257;
-	font-size: 42px;
+	font-size: 39px;
 	font-family: $garamond;
 	font-style: italic;
 }

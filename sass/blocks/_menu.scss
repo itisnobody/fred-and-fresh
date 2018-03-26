@@ -1,32 +1,33 @@
 .menu {
-	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
-	background-color: $orange;
-	padding: 70px 0;
-	color: $white;
+    box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+    background-color: $orange;
+    padding: 4rem 0 3rem;
+    color: $white;
 
-	@include wave-top ($orange);
+    @include wave-top ($orange);
 }
 
 .menu__title {}
 
-.tabs__list {}
-
 .tabs__list {
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
+    text-align: center;
+    @include center-wrap (990px);
+    display: flex;
+    justify-content: space-between;
 }
 
 .tabs__item {
-	max-width: 220px;
-	text-align:center;
-	vertical-align: top;
-	display: inline-block;
+    max-width: 220px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
 }
 
 .tabs__item__title {
-	font-family: $futura-demi;
-	font-size: 25px;
-	font-weight: 400;
-	display: inline-block;
+    font-family: $futura-demi;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 1em;
 }

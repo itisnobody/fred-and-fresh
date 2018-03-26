@@ -1,73 +1,42 @@
 .clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
 
-	&::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+.fl-left,
+.col-lt {
+    float: left;
+    width: 50%;
+}
+
+.fl-right,
+.col-rt {
+    float: right;
+    width: 50%;
+}
+
+// сентруется по горизонтали с падингами
+
+@mixin center-block ($width: 1044px) {
+    max-width: $width;
+     // padding: 0 ($max-width - $width)/2;
+    margin: 0 auto;
+}
+
+@mixin center-wrap ($width: 990px) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin psevdo {
+    display: inline-block;
+    content: '';
 }
 
 .container {
-	
-	@include center-block (1000px);
-
-	@extend .clearfix;
-	// @media screen and (max-width: 768px) {
-	// 	width: 50%;
-	// }
-}
-
-.col-lt {
-	float: left;
-	width: 50%;
-}
-
-.col-rt {
-	float: right;
-	width: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.wave {
-	position: relative;
-
-	&::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: -7px;
-		right: 0;
-		background-repeat: repeat;
-		height: 20px;
-		background-size: 40px 20px;
-		background-image: radial-gradient(circle at 11px -6px, transparent 12px, $white 13px);   
-	}
-
-	&::after {
-		content: '';
-		position: absolute;
-		background-repeat: repeat;
-		height: 10px;
-		background-size: 40px 10px;
-		background-image: radial-gradient(circle at 25px 13px, $white 12px, transparent 0px);
-		right: 0;  
-		left: 6px;
-		top: -12px;
-	}
+    @include center-wrap;
+    @extend .clearfix;
 }

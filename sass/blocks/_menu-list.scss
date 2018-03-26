@@ -6,7 +6,7 @@
     color: $black;
     text-align: center;
     font-weight: 400;
-    padding: 70px 0;
+    padding: 4rem 0;
 }
 
 .menu__item {
@@ -14,22 +14,24 @@
     margin: 0 auto;
     border-radius: 15px;
     background-color: $white;
-    padding: 60px 52px 60px 72px;
+    padding: 2rem 52px 60px 72px;
 }
 
 .menu__name {
-    position:relative;
     font-family: $futura-demi;
-    font-size: 35px;
-    margin-bottom: 50px;
+    font-size: 36px;
+    margin: 0 1em 2rem;
     font-weight: 400;
     color: $black;
+    line-height: 1.7;
     text-align: center;
+    display: inline-block;
+    ;
 }
 
 .product__wrap {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .product__img {
@@ -45,51 +47,51 @@
 }
 
 .product__info {
-	width: 460px-108px;
-	padding: 0 54px;
-	display: flex;
-	flex-flow: column nowrap;
+    width: 460px-108px;
+    padding: 0 3rem;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
 
     .description {
-		font-family: $garamond;
-		font-size: 22px;
-		font-weight: 400;
-		line-height: 1.5;
+        font-family: $garamond;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.5;
     }
 
     .components {
-    	position: relative;
-		color: $yellow;
-		font-family: $garamond;
-		font-size: 34px;
-		font-weight: 700;
-		line-height: 1.08;
+        position: relative;
+        color: $yellow;
+        font-family: $garamond;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.08;
 
-		&::before,
-		&::after {
-			display: block;
-			content: '';
-			position: absolute;
-			width:130%;
-			left: -15%;
-			@extend .icon--wave;
-		}
+        &::before,
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 130%;
+            left: -15%;
+            @extend .icon--wave;
+        }
 
-		&::before {
-			top:-34px;
-		}
+        &::before {
+            top: -34px;
+        }
 
-		&::after {
-			bottom:-34px;
-		}
+        &::after {
+            bottom: -34px;
+        }
     }
 
     .price {
-		color: #1e1e1e;
-		font-family: $futura-demi;
-		font-size: 52px;
-		font-weight: 400;
+        color: #1e1e1e;
+        font-family: $futura-demi;
+        font-size: 52px;
+        font-weight: 400;
     }
 }
