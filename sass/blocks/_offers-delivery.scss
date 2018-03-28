@@ -3,27 +3,46 @@
     background-image: url(../images/offers-bg.jpg);
     background-size: cover;
     background-position: center bottom;
+    display: none;
 
     .container {
         @include center-wrap (990px);
+        padding: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media all and (max-width: 1024px - 1) {
+            display:block;
+            text-align: center;
+        }
     }
 
     img {
         width: 100%;
         background-color: #b8b8b8;
+
+        @media all and (min-width: 1024px) {
+            margin: 0 1rem;
+        }
     }
 }
 
 .offers__content {
     width: 55%;
+
+    @media all and (max-width: 1024px - 1) {
+        width: 100%;
+    }
 }
 
 .offers__img {
     overflow: hidden;
     width: 45%;
+
+    @media all and (max-width: 1024px - 1) {
+        width: 100%;
+    }
 }
 
 .question {
@@ -39,6 +58,11 @@
     font-size: 64px;
     font-weight: 400;
     margin-bottom: 40px;
+
+    @media all and (max-width: 420px - 1) {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
 }
 
 .reply-caption {
@@ -46,4 +70,9 @@
     font-size: 21px;
     font-weight: 400;
     line-height: 2.14;
+
+    @media all and (max-width: 420px - 1) {
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
 }

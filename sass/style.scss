@@ -7,11 +7,13 @@
 @import "components/common";
 @import "components/layout";
 @import "components/buttons";
-@import "components/forms";
+@import "icon";
+// @import "components/forms";
+
+
 
 @import "header";
 @import "footer";
-@import "icon";
 
 @import "blocks/menu";
 @import "blocks/menu-list";
@@ -22,3 +24,7 @@
 @import "blocks/map";
 @import "blocks/form";
 @import "blocks/share";
+
+.is-visible {
+    display: block;
+}

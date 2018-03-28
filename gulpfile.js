@@ -105,6 +105,12 @@ gulp.task('minify:html', function() {
         .pipe(gulp.dest('./public/'));
 });
 
+// перемещение шрифтов
+gulp.task('fonts', function() {
+    return gulp.src(['./fonts/**/*'])
+        .pipe(gulp.dest('./public/fonts/'));
+});
+
 // видалити папку public
 gulp.task('clear', function() {
     return gulp.src('./public', { read: false }).pipe(clear());
@@ -117,7 +123,7 @@ gulp.task('sprite', function() {
             imgName: 'sprite.png',
             cssName: '_icon-mixin.scss',
             imgPath: '../images/sprite.png',
-// для ретины следующие 2 строки
+// для ретины следующие
             // retinaImgName: 'sprite@2x.png',
             // retinaSrcFilter: ['images/sprite/*@2x.png'],
             cssVarMap: function(sprite) {
@@ -147,4 +153,4 @@ gulp.task('default', ['server', 'sass', 'fileinclude']);
 // при виклику команди gulp production
 // будуть стиснуті всі ресурси в папку public
 // після чого командою gulp deploy їх можна опублікувати на github
-gulp.task('production', ['minify:html', 'minify:css', 'minify:js', 'minify:img']);
+gulp.task('production', ['minify:html', 'minify:css', 'minify:js', 'minify:img', 'fonts']);

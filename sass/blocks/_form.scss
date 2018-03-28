@@ -1,23 +1,27 @@
 .mails-form {
-	background-color: $orange;
-	color: $white;
-	padding: 54px 0 72px;
-	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+    @include wave-top ($orange);
+    background-color: $orange;
+    color: $white;
+    padding: 54px 0 72px;
+    box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
 
-	@include wave-top ($orange);
+    @media all and (max-width: 480px) {
+        padding: 1.5rem 0 2rem;
+    }
 
-	.container {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-between;
-		align-content:  space-between;
-		height: 258px;
-		padding-bottom: 70px;
-	}
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 258px;
+        padding-bottom: 70px;
 
-	input, textarea {
-	}
-
-	textarea {
-	}
+        @media all and (max-width: 1024px - 1) {
+            flex-wrap: nowrap;
+            align-items: center;
+            height: 540px;
+            padding: 0 1rem 2rem;
+        }
+    }
 }

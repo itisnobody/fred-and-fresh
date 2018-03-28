@@ -8,16 +8,16 @@
 //     font-style: normal;
 // }
 
-// @font-face {
-//     font-family: 'Futura Futuris C';
-//     src: url('../fonts/FuturaFuturis/FuturaFuturisC.eot');
-//     src: local('FuturaFuturisC'),
-//     url('../fonts/FuturaFuturis/FuturaFuturisC.eot?#iefix') format('embedded-opentype'),
-//     url('../fonts/FuturaFuturis/FuturaFuturisC.woff') format('woff'),
-//     url('../fonts/FuturaFuturis/FuturaFuturisC.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Futura Futuris C';
+    src: url('../fonts/FuturaFuturis/FuturaFuturisC.eot');
+    src: local('FuturaFuturisC'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.woff') format('woff'),
+    url('../fonts/FuturaFuturis/FuturaFuturisC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // logo
 

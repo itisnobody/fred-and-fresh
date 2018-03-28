@@ -1,19 +1,26 @@
 html {
-	font-family: $futura-futuris;
-	font-size: 18px;
-	font-weight: 400;
+    font-family: $futura-futuris;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 body {
-	background-color: $white;
-	color: $black;
-	max-width: $max-width;
-	min-width: $min-width;
-	margin: 0 auto;
+    background-color: $white;
+    color: $black;
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 0 auto;
 }
 
-h1, h2, h3, h4, p, figure {
-	margin: 0;
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+button {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -22,60 +29,110 @@ a {
     font: inherit;
 }
 
-button, label {
-	border: none;
-	cursor: pointer;
+button,
+label {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+form {
+    color: $gray;
+    font-family: $futura-demi;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    background-color: $white;
+    width: 50%;
+    max-width: 465px;
+    line-height: 1.7;
+    padding: 5px 10px;
+    border-radius: 3px;
+
+    @media all and (max-width: 1024px - 1) {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    @media all and (max-width: 768px - 1) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+input,
+select {
+    height: 42px;
+    border: none;
+}
+
+select {
+    color: #757575;
 }
 
 textarea {
-	border: none;
+    border: none;
+    padding: 1px 10px;
 }
 
 .title {
-	font-family: $futura-demi;
-	font-size: 60px;
-	font-weight: 400;
-	text-align: center;
-	margin-bottom: 30px;
+    font-family: $futura-demi;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    @media all and (max-width: 768px - 1) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    @media all and (max-width: 420px - 1) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 // Волнистый контур для секций
-
 @mixin wave-top ($color-wave: #000) {
-	position: relative;
+    position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: 10;
-		left: 0;
-		top: -10px;
-		right: 0;
-		background-repeat: repeat;
-		height: 20px;
-		background-size: 40px 20px;
-		background-image: radial-gradient(circle at 11px -6px, transparent 12px, $color-wave 13px);
-	}
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: -10px;
+        right: 0;
+        background-repeat: repeat;
+        height: 20px;
+        background-size: 40px 20px;
+        background-image: radial-gradient(circle at 11px -6px, transparent 12px, $color-wave 13px);
+    }
 
-	&::after {
-		content: '';
-		position: absolute;
-		z-index: 10;
-		background-repeat: repeat;
-		height: 10px;
-		background-size: 40px 10px;
-		background-image: radial-gradient(circle at 25px 13px, $color-wave 12px, transparent 0px);
-		right: 0;  
-		left: 6px;
-		top: -15px;
-	}
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 40px 10px;
+        background-image: radial-gradient(circle at 25px 13px, $color-wave 12px, transparent 0px);
+        right: 0;
+        left: 6px;
+        top: -15px;
+    }
 }
 
 // старая волна
-
 // .wave {
 // 	position: relative;
-
 // 	&::before {
 // 		content: '';
 // 		position: absolute;
@@ -87,7 +144,6 @@ textarea {
 // 		background-size: 40px 20px;
 // 		background-image: radial-gradient(circle at 11px -6px, transparent 12px, $white 13px);   
 // 	}
-
 // 	&::after {
 // 		content: '';
 // 		position: absolute;

@@ -18,14 +18,6 @@
     width: 50%;
 }
 
-// сентруется по горизонтали с падингами
-
-@mixin center-block ($width: 1044px) {
-    max-width: $width;
-     // padding: 0 ($max-width - $width)/2;
-    margin: 0 auto;
-}
-
 @mixin center-wrap ($width: 990px) {
     max-width: $width;
     margin: 0 auto;

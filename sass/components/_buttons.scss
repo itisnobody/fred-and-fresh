@@ -15,12 +15,10 @@
     min-width: 160px;
     cursor: pointer;
 
-    &.is-hover,
     &:hover {
         box-shadow: 0 15px 50px rgba(139, 57, 3, 0.36);
     }
 
-    &.is-active,
     &:active {
         background-color: $btn-color/1.25;
     }
@@ -30,6 +28,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.875;
+        margin: 0 10px;
         color: #fffefe;
         text-shadow: 0 1px 0 rgba(104, 56, 8, 0.52);
 
@@ -46,33 +45,16 @@
         padding: 5px 40px; // margin: 37px auto 0;
         margin: 0 auto;
         position: relative;
-    }
 
-    &--circle {
-        background-color: $white;
-        background-image: none;
-        width: 180px;
-        height: 180px;
-        margin: 20px;
-        padding: 0;
-        border-radius: 50%;
-
-        &:hover,
-        &:active {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-            box-shadow: 0 24px 51px rgba(139, 57, 3, 0.36);
-        }
-
-        &:active {
-            background-color: $white/1.03;
+        @media all and (max-width: 768px - 1) {
+            padding: 0 0.5em;
+            font-size: 22px;
         }
     }
 
     &--prev,
     &--next {
-        min-width:40px;
+        min-width: 40px;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -83,9 +65,33 @@
         vertical-align: baseline;
         box-shadow: none;
 
-        &:hover {
+        &:hover,
+        &:active {
             box-shadow: 0 8px 50px rgba(139, 57, 3, 0.36);
         }
+    }
+}
+
+.pad {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: $white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    box-sizing: content-box;
+
+    &:hover {
+        box-shadow: 0 24px 51px rgba(139, 57, 3, 0.36);
+        background-color: $white / 1.05;
+    }
+
+    &:active,
+    &.is-active {
+        margin: 0;
+        padding: 10px;
+        box-shadow: 0 24px 51px rgba(139, 57, 3, 0.36);
     }
 }
 
@@ -99,14 +105,15 @@
         width: 100%;
         transform: scaleX(0);
         height: 4px;
-        bottom: -0.5em;
+        bottom: -0.2em;
         left: 0;
         background-color: #fad00b;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:active::after {
         transform: scaleX(1);
         transform-origin: bottom left;
     }

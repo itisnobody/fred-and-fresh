@@ -1,5 +1,5 @@
 .menu__list {
-    background-image: url('../images/header-bg.jpg');
+    background-image: url('../images/menu-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -7,6 +7,11 @@
     text-align: center;
     font-weight: 400;
     padding: 4rem 0;
+    display: none;
+
+    @media all and (max-width: 480px) {
+        padding: 1rem 1rem 2rem;
+    }
 }
 
 .menu__item {
@@ -14,7 +19,13 @@
     margin: 0 auto;
     border-radius: 15px;
     background-color: $white;
-    padding: 2rem 52px 60px 72px;
+    padding: 2rem 52px 60px;
+
+    @media all and (max-width: 1024px - 1) {
+        // padding: 2rem 1rem 3rem;
+        // max-width: 100%;
+        // border-radius: 0;
+    }
 }
 
 .menu__name {
@@ -26,12 +37,22 @@
     line-height: 1.7;
     text-align: center;
     display: inline-block;
-    ;
+
+    @media all and (max-width: 420px - 1) {
+        font-size: 26px;
+        margin: 0 5px 2rem;
+        line-height: 61px;
+    }
 }
 
 .product__wrap {
     display: flex;
     justify-content: center;
+
+    @media all and (max-width: 768px - 1) {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 }
 
 .product__img {
@@ -40,6 +61,13 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+
+    @media all and (max-width: 1024px - 1) {
+        margin-bottom: 12px;
+    }
+    @media all and (max-width: 768px - 1) {
+        width: 100%;
+    }
 
     img {
         height: 100%;
@@ -54,11 +82,20 @@
     justify-content: space-between;
     align-items: center;
 
+    @media all and (max-width: 1024px - 1) {
+        // width:80%;
+        // margin-bottom: 12px;
+    }
+
     .description {
         font-family: $garamond;
         font-size: 22px;
         font-weight: 400;
         line-height: 1.5;
+
+        @media all and (max-width: 1024px - 1) {
+            margin-bottom: 12px;
+        }
     }
 
     .components {
@@ -68,6 +105,10 @@
         font-size: 34px;
         font-weight: 700;
         line-height: 1.08;
+
+        @media all and (max-width: 1024px - 1) {
+            margin-bottom: 12px;
+        }
 
         &::before,
         &::after {
@@ -93,5 +134,9 @@
         font-family: $futura-demi;
         font-size: 52px;
         font-weight: 400;
+        
+        @media all and (max-width: 1024px - 1) {
+            margin-bottom: 12px;
+        }
     }
 }

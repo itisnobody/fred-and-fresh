@@ -1,51 +1,65 @@
 .advantages {
-	background-color: $white;
-	color: $light-gray;
-	padding: 72px 0 90px;
-	box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+    background-color: $white;
+    color: $light-gray;
+    padding: 4rem 0 90px;
+    box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
+    @include wave-top ($white);
 
-	@include wave-top ($white);
+    @media all and (max-width: 480px) {
+        padding: 1.5rem 0 2rem;
+    }
 
-	.btn--xl::after {
-		@include psevdo;
-		position: absolute;
-		left: 100%;
-		top: 0;
-		@extend .icon--btn__label;
-	}
+    .btn--xl::after {
+        @include psevdo;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        @extend .icon--btn__label;
+        display: none;
+
+        @media all and (min-width: 1024px - 1) {
+            display:inline-block;
+        }
+    }
 }
 
 .advantages__wrap {
-	display: flex;
-	justify-content: space-between;
-	@include center-wrap (990px);
-	padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    @include center-wrap (990px);
+    padding-bottom: 3rem;
+    @media all and (max-width: 1024px - 1) {
+        overflow-x: scroll;
+    }
 }
 
 .advantages__item {
-	max-width: 210px;
-	// min-height: 300px;
-	text-align:center;
-	display:flex;
-	justify-content: center;
-	flex-direction: column;
-	align-content:stretch;
+    min-width: 210px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
 }
 
 .advantages__item__caption {
-	font-weight: 400;
+    font-weight: 400;
 
-	h4 {
-		font-family: $futura-demi;
-		font-size: 21px;
-		line-height: 2;
-		margin-top: 18px;
-	}
+    h4 {
+        font-family: $futura-demi;
+        font-size: 21px;
+        line-height: 2;
+        margin-top: 18px;
+    }
 
-	p {
-		font-family: $garamond;
-		font-size: 17px;
-		line-height: 1.6;
-		opacity: 0.75;
-	}
+    p {
+        font-family: $garamond;
+        font-size: 17px;
+        line-height: 1.6;
+        opacity: 0.75;
+        @media all and (max-width: 480px) {
+            line-height: 1;
+        }
+    }
 }

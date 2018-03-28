@@ -13,8 +13,6 @@
 	}
 }
 
-
-
 // @else if $media == phone {
 // 		@media all and (min-width: $min-width) and (max-width: $medium-width - 1) { @content; }
 // 	}
@@ -29,3 +27,11 @@
 // 	@else if $media == ipad {
 // 		@media all and (min-width: $medium-width) and (max-width: $large-width) { @content; }
 // 	}
+
+@media all and (max-width: 1070px) {
+
+	}
+
+@media all and (max-width: 420px - 1) {}
+@media all and (max-width: 768px - 1) {}
+@media all and (max-width: 1024px - 1) {}

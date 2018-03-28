@@ -1,23 +1,29 @@
 .menu {
+    @include wave-top ($orange);
     box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
     background-color: $orange;
     padding: 4rem 0 3rem;
     color: $white;
 
-    @include wave-top ($orange);
+    @media all and (max-width: 480px) {
+        padding: 1.5rem 0 2rem;
+    }
 }
 
-.menu__title {}
-
 .tabs__list {
-    text-align: center;
     @include center-wrap (990px);
+    text-align: center;
     display: flex;
     justify-content: space-between;
+
+    @media all and (max-width: 1024px - 1) {
+        overflow-x: scroll;
+    }
 }
 
 .tabs__item {
-    max-width: 220px;
+    min-width: 170px;
+    margin: 0 1rem;
     text-align: center;
     vertical-align: top;
     display: inline-block;

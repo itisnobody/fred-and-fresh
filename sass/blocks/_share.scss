@@ -1,29 +1,54 @@
 .share {
+    @include wave-top ($white);
     color: $black;
-    background-image: url(../images/share-bg.jpg);
-    background-size: cover;
-    background-position: center bottom;
     box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
     padding: 70px 0 2rem;
 
-    @include wave-top ($white);
+    @media all and (min-width: 768px) {
+        background-image: url(../images/share-bg.jpg);
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    @media all and (max-width: 480px) {
+        padding: 1.5rem 0 2rem;
+    }
 
     .container {
         @include center-wrap (990px);
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-end;
+        padding: 0 2% 0 48%;
 
-        .question,
-        .reply,
-        .reply-caption {
-            width: 52%;
-            margin-bottom: 2rem;
+        @media all and (max-width: 768px - 1) {
+            padding: 0 1rem;
+            text-align: center;
+            margin: 0;
         }
+    }
+    
+    .question,
+    .reply,
+    .reply-caption {
+        margin-bottom: 2rem;
 
-        .question,
-        .reply-caption {
-            line-height: 1.5;
+        @media all and (max-width: 768px - 1) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .reply {
+        @media all and (max-width: 480px) {
+            line-height: 1;
+            font-size: 2rem;
+        }
+    }
+
+    .question,
+    .reply-caption {
+        line-height: 1.5;
+
+        @media all and (max-width: 480px) {
+            font-size: 18px;
+            line-height: 1;
         }
     }
 }
