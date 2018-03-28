@@ -1,4 +1,6 @@
-@import "components/normalize";
+@import "vendor/normalize";
+@import "vendor/owl.carousel";
+@import "vendor/theme.default";
 
 @import "components/fonts";
 @import "components/variables";
@@ -9,8 +11,6 @@
 @import "components/buttons";
 @import "icon";
 // @import "components/forms";
-
-
 
 @import "header";
 @import "footer";

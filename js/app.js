@@ -1,6 +1,6 @@
 // Слайдеры
 
-$('.owl-carousel').owlCarousel({
+$('.js-slider-clients').owlCarousel({
     loop:true,
     margin:10,
     nav:true
