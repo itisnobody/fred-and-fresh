@@ -1,10 +1,39 @@
 // Слайдеры
 
 $('.js-slider-clients').owlCarousel({
+    items:6,
     loop:true,
-    margin:10,
-    nav:true
-})
+    nav:false,
+    dots:false,
+    autoplay: true,
+    center: true,
+    autoWidth: true,
+    margin: 80
+});
+
+// Бургер
+
+$('document').ready(function () {
+var trigger = $('#hamburger'),
+    isClosed = false;
+
+trigger.click(function () {
+  burgerTime();
+});
+
+function burgerTime() {
+  if (isClosed == true) {
+    trigger.removeClass('is-open');
+    trigger.addClass('is-closed');
+    isClosed = false;
+  } else {
+    trigger.removeClass('is-closed');
+    trigger.addClass('is-open');
+    isClosed = true;
+  }
+}
+
+});
 
 // Кнопки
 
