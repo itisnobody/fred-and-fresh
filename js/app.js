@@ -11,6 +11,35 @@ $('.js-slider-clients').owlCarousel({
     margin: 80
 });
 
+$('.js-slider-advantages').owlCarousel({
+    items:4,
+    loop:true,
+    nav:false,
+    dots:false,
+    autoplay: true,
+    // center: true,
+    // autoWidth: true,
+    // responsiveClass:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        1024:{
+            items:4,
+            autoplay: false
+        }
+    },
+    mergeFit:false,
+    margin: 0
+});
+
 // Бургер
 
 $('document').ready(function () {

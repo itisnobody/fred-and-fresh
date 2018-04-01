@@ -1,12 +1,12 @@
 .advantages {
     background-color: $white;
     color: $light-gray;
-    padding: 4rem 0 90px;
+    padding: 4rem 2rem 90px;
     box-shadow: 0 -10px 30px rgba(194, 201, 206, 0.5), 0 0 14px rgba(194, 201, 206, 0.3);
     @include wave-top ($white);
 
     @media all and (max-width: 480px) {
-        padding: 1.5rem 0 2rem;
+        padding: 1.5rem 1rem 2rem;
     }
 
     .btn--xl::after {
@@ -24,13 +24,8 @@
 }
 
 .advantages__wrap {
-    display: flex;
-    justify-content: space-between;
     @include center-wrap (990px);
     padding-bottom: 3rem;
-    @media all and (max-width: 1024px - 1) {
-        overflow-x: scroll;
-    }
 }
 
 .advantages__item {

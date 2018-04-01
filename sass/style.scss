@@ -4,14 +4,12 @@
 
 @import "components/fonts";
 @import "components/variables";
-// @import "components/breakpoint";
-// @import "components/mixins";
 @import "components/common";
 @import "components/layout";
 @import "components/buttons";
 @import "components/burger";
 @import "icon";
-// @import "components/forms";
+@import "components/animate";
 
 @import "header";
 @import "footer";
@@ -25,7 +23,3 @@
 @import "blocks/map";
 @import "blocks/form";
 @import "blocks/share";
-
-.is-visible {
-    display: block;
-}

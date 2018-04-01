@@ -6,14 +6,3 @@
         padding: 1.5rem 0;
     }
 }
-
-.clients__wrap {
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @media all and (max-width: 768px - 1) {
-        overflow-x: scroll;
-        display: block;
-    }
-}

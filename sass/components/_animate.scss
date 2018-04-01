@@ -1,0 +1,38 @@
+@mixin fadeInDown {
+	animation-name: fadeInDown;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@mixin fadeOutUp {
+	animation-name: fadeOutUp;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    visibility: hidden;
+	opacity: 0;
+	transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+	visibility: visible;
+    opacity: 1;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}

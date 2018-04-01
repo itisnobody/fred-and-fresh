@@ -8,11 +8,16 @@
     font-weight: 400;
     padding: 4rem 0;
     display: none;
+    &.is-visible {
+        display: block;
+    }
 
     @media all and (max-width: 480px) {
-        padding: 1rem 1rem 2rem;
+        padding: 0;
     }
 }
+
+
 
 .menu__item {
     max-width: 1044px-72-52;
@@ -21,10 +26,8 @@
     background-color: $white;
     padding: 2rem 52px 60px;
 
-    @media all and (max-width: 1024px - 1) {
-        // padding: 2rem 1rem 3rem;
-        // max-width: 100%;
-        // border-radius: 0;
+    @media all and (max-width: 480px) {
+        border-radius: 0;
     }
 }
 
@@ -82,9 +85,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @media all and (max-width: 1024px - 1) {
-        // width:80%;
-        // margin-bottom: 12px;
+    @media all and (max-width: 480px) {
+        padding: 0 1rem;
+        width: auto;
     }
 
     .description {
@@ -118,6 +121,10 @@
             width: 130%;
             left: -15%;
             @extend .icon--wave;
+
+            @media all and (max-width: 768px - 1) {
+                display: none;
+            }
         }
 
         &::before {
@@ -134,7 +141,7 @@
         font-family: $futura-demi;
         font-size: 52px;
         font-weight: 400;
-        
+
         @media all and (max-width: 1024px - 1) {
             margin-bottom: 12px;
         }
