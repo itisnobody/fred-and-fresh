@@ -2,7 +2,9 @@
 $color: $white;         // icon color
 $blue: #158fef;   // background color
 $animation: 0.5s;   // animation speed
-$scale: 0.5;            // icon scale 68/68 default
+$scale: 1;            // icon scale 68/68 default
+$burger-size: 68px;
+
 
 // *, *:before, *:after {
 //   box-sizing: border-box;
@@ -15,12 +17,12 @@ $scale: 0.5;            // icon scale 68/68 default
 // }
 
 .hamburglar {
-  transform: scale($scale);
+  // transform: scale($scale);
   // margin: 40px auto;
   position: relative;
-  display: block;
-  width: 68px;
-  height: 68px;
+  // display: block;
+  // width: 68px;
+  // height: 68px;
   // background: $blue;
   -webkit-touch-callout: none;
     user-select: none;
@@ -32,8 +34,8 @@ $scale: 0.5;            // icon scale 68/68 default
   position: absolute;
   top: 0;
   left: 0;
-  height: 68px;
-  width: 68px;
+  height: $burger-size;
+  width: $burger-size;
   // two masks because... browser support.
   mask: url(#mask);
   -webkit-mask-box-image: url(https://raygun.io/upload/mask.svg);
@@ -43,15 +45,15 @@ $scale: 0.5;            // icon scale 68/68 default
   position: absolute;
   top: 0;
   left: 0;
-  width: 68px;
-  height: 68px;
+  width: $burger-size;
+  height: $burger-size;
 }
 
 // what this does is create a small square that I then rotate behind an svg mask, giving the apparence of the line animating
 .path-rotation {
-  height: 34px;
-  width: 34px;
-  margin: 34px 34px 0 0;
+  height: $burger-size/2;
+  width: $burger-size/2;
+  margin: $burger-size/2 $burger-size/2 0 0;
   transform: rotate(0deg);
   transform-origin: 100% 0;
   &:before {
@@ -59,34 +61,9 @@ $scale: 0.5;            // icon scale 68/68 default
     content: '';
     display: block;
     width: 30px;
-    height: 34px;
+    height: $burger-size/2;
     margin: 0 4px 0 0;
     background: $color;
-  }
-}
-
-// box rotation animation
-@keyframes rotate-out {
-  0% {
-    transform: rotate(0deg);
-  }
-  40% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-in {
-  0% {
-    transform: rotate(360deg);
-  }
-  40% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 
@@ -122,38 +99,15 @@ $scale: 0.5;            // icon scale 68/68 default
   stroke-linejoin: round;
 }
 
-@keyframes dash-in {
-  0% {
-    stroke-dashoffset: 240;
-  }
-  40% {
-    stroke-dashoffset: 240;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash-out {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 240;
-  }
-  100% {
-    stroke-dashoffset: 240;
-  }
-}
-
 
 
 // All good burgers need filling!
 
 .burger-icon {
-  position: absolute;
-  padding: 20px 16px;
-  height: 68px;
-  width: 68px;
+  // position: absolute;
+  // padding: 20px 16px;
+  // height: 68px;
+  // width: 68px;
 }
 
 .burger-container {
@@ -175,12 +129,12 @@ $scale: 0.5;            // icon scale 68/68 default
 
 .burger-bun-top {
   top: 0;
-  transform-origin: 34px 2px;
+  transform-origin: $burger-size / 2 2px;
 }
 
 .burger-bun-bot {
   bottom: 0;
-  transform-origin: 34px 2px;
+  transform-origin: $burger-size / 2 2px;
 }
 //.burger-filling {
 //  @include transition(all,($animation/2.5),ease-in-//out);
@@ -199,13 +153,13 @@ $scale: 0.5;            // icon scale 68/68 default
   position: absolute;
   top: 0;
   left: 0;
-  width: 68px;
-  height: 68px;
+  // width: 68px;
+  // height: 68px;
 }
 
 .svg-ring {
-  width: 68px;
-  height: 68px;
+  width: $burger-size;
+  height: $burger-size;
 }
 
 
@@ -216,7 +170,7 @@ $scale: 0.5;            // icon scale 68/68 default
     animation-fill-mode:forwards;
   }
   .burger-bun-bot {
-    animation: bun-bot-out $animation linear normal;
+    animation: bun-bot-out $animation linear forwards;
     animation-fill-mode:forwards;
   }
 }
@@ -228,6 +182,46 @@ $scale: 0.5;            // icon scale 68/68 default
   .burger-bun-bot {
     animation: bun-bot-in $animation linear normal;
     animation-fill-mode:forwards;
+  }
+}
+
+// burger filling
+.hamburglar.is-open {
+  .burger-filling {
+    animation: burger-fill-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+.hamburglar.is-closed {
+  .burger-filling {
+    animation: burger-fill-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+// box rotation animation
+@keyframes rotate-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  0% {
+    transform: rotate(360deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -318,19 +312,26 @@ $scale: 0.5;            // icon scale 68/68 default
   }
 }
 
-
-// burger filling
-.hamburglar.is-open {
-  .burger-filling {
-    animation: burger-fill-out $animation linear normal;
-    animation-fill-mode:forwards;
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
-
-.hamburglar.is-closed {
-  .burger-filling {
-    animation: burger-fill-in $animation linear normal;
-    animation-fill-mode:forwards;
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 240;
   }
 }
 
